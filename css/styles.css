@@ -1,0 +1,156 @@
+/*  background color: #F5F5F5  bgc-color
+    header color #FFFFFF
+    footer hero color #2F303A
+    comand color #F5F4FA
+    text color #212121         title-color
+    text2 color #757575
+    text3 color #2196F3
+    adress link color: rgba(255, 255, 255, 0.6);
+    adress color: #FFFFFF;
+    button active #188CE8;
+    button galery #F5F4FA
+    project #EEEEEE
+
+*/
+:root {
+    --bgc-color: #F5F5F5;
+    --title-color: #212121;
+    --logo-color1: #2196F3;
+    --logo-color2: #000000;
+    --hero-text-color: #FFFFFF;
+    --hero-bgc-color: #2F303A;
+    --button-text-color: #FFFFFF;
+    --button-bgc-color: #2196F3;
+    --button-active-color: #188CE8;
+    --description-color: #757575;
+    --hover-color: #2196F3;
+    --footer-bgc-color: #2F303A;
+    --footer-adress-color: #FFFFFF;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --team-bgc-color: #F5F4FA;
+}
+
+body {
+    background-color: var(--bgc-color);
+    color: var(--title-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+.logo {
+    color: var(--logo-color1);;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo span {
+    color: var(--logo-color2);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    }
+.nav .link, .contacts .link {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+.nav a:hover, .nav a:focus {
+    color: var(--hover-color);
+}
+.nav .current {
+    color: var(--hover-color);
+}
+
+.contacts .link {
+    color: var(--description-color);
+}
+.contacts a:hover {
+    color: var(--hover-color);
+}
+.hero {
+    background-color: var(--hero-bgc-color);
+}
+.hero .h1 {
+    color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+button {
+    color: var(--button-text-color);
+    background-color: var(--button-bgc-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+button:active {
+    background-color: var(--button-active-color);
+}
+.advantage .h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.advantage .description {
+    color: var(--description-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.tasks {
+    color: var(--description-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.footer {
+    background-color: var(--footer-bgc-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer .adress {
+    color: var(--footer-adress-color);
+    font-style: normal;
+}
+.fcontacts .link {
+    color: var(--footer-contacts-color);
+}
+.fcontacts .link:hover, .fcontacts .link:focus {
+    color: var(--hover-color);
+}
