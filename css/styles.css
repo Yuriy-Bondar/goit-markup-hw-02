@@ -13,15 +13,17 @@
 
 */
 :root {
-    --bgc-color: #F5F5F5;
+    --bgc-color: #FFFFFF;
     --title-color: #212121;
     --logo-color1: #2196F3;
     --logo-color2: #000000;
+    --logo-color3: #FFFFFF;
     --hero-text-color: #FFFFFF;
     --hero-bgc-color: #2F303A;
     --button-text-color: #FFFFFF;
     --button-bgc-color: #2196F3;
     --button-active-color: #188CE8;
+    --button-project-bgc: #F5F4FA;
     --description-color: #757575;
     --hover-color: #2196F3;
     --footer-bgc-color: #2F303A;
@@ -45,8 +47,11 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
-.logo span {
+.logo1 {
     color: var(--logo-color2);
+}
+.logo2 {
+    color: var(--logo-color3);
 }
 .list {
     list-style: none;
@@ -86,19 +91,19 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-button {
+.button-hero {
     color: var(--button-text-color);
     background-color: var(--button-bgc-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
-button:active {
+.button-hero:active {
     background-color: var(--button-active-color);
 }
 .advantage .h3 {
@@ -108,12 +113,32 @@ button:active {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+.button-project {
+    color: var(--title-color);
+    background-color: var(--button-project-bgc);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.button-project:hover, .button-project:focus {
+    color: var(--button-text-color);
+    background-color: var(--hover-color);
+}
+
 .advantage .description {
     color: var(--description-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+}
+.team {
+    background-color: var(--team-bgc-color);
 }
 .title {
     font-weight: 700;
@@ -135,6 +160,19 @@ button:active {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    letter-spacing: 0.03em;
+}
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-descript {
+    color: var(--description-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
 }
 .footer {
